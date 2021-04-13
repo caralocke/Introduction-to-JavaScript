@@ -85,7 +85,7 @@ Do the following:
 function multiply(a, b){
     console.log(a * b)
   }
-  multiply(7, 5);
+  multiply(5, 7);
 
 
 
@@ -178,8 +178,22 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let computer = Math.random();
+if(computer <= 0.34){
+  computer = 'rock';
+}else if(computer <= 0.67){
+  computer = 'paper'
+}else if(computer > 0.67){
+  computer = 'scissors';
+}
 function game(user, computer){
-    /*add your code here*/
+    if(user === computer){
+      return `it's a tie`;
+    }else if(user === 'rock' && computer === 'scissors'){
+      return 'you win!';
+    }else{
+      return 'you lose!';
+    } 
 }
   
   
@@ -195,10 +209,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km){
+    return km * 0.621371;
   }
-
+console.log('task 5a:', miles(10))
 
 
 //Task 5b - Feet to CM
@@ -209,9 +223,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm / 30.48;
   }
+
+  console.log('task 5b:', feet(162))
  
 
 
