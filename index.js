@@ -234,7 +234,8 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-        return('${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number left over} bottles of soda on the wall');
+  let numberLeftOver = (number - 1);
+        return(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${numberLeftOver} bottles of soda on the wall`);
   }
   console.log('task 6:', annoyingSong(99))
 
