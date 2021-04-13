@@ -36,8 +36,22 @@ Do the following:
 
    HINT: no function required
 */
+let mood = 'happy';
 
+if(mood === 'sad'){
+  console.log('Cheer up, buttercup!')
+}
+if(mood === 'happy'){
+  console.log(`You've got this`)
+}
 
+mood = 'sad'
+if(mood === 'sad'){
+  console.log('Cheer up, buttercup!')
+}
+if(mood === 'happy'){
+  console.log(`You've got this`)
+}
 
 
 
