@@ -86,7 +86,7 @@ function multiply(a, b){
     console.log(a * b)
   }
   multiply(8, 5);
-  
+
 
 
 
@@ -100,9 +100,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+  let dogYears = age * 7;
+  return dogYears;
 }
+console.log(dogYears(36));
 
 
 
