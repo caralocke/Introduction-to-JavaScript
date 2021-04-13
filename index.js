@@ -191,8 +191,7 @@ function game(user, computer){
       return 'you lose!';
     } 
 }
-  
-  
+ 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -238,10 +237,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-  let numberLeftOver = (number - 1);
-        return(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${numberLeftOver} bottles of soda on the wall`);
+  for (let i = number; i > 0; i--)
+        return(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`);
   }
-  console.log('task 6:', annoyingSong(99))
+  console.log('task 6:', annoyingSong(98))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
