@@ -26,6 +26,8 @@ let votingAge = 18;
     console.log("false");
   }
 
+
+
 /*
 Task 1b - Values
 
@@ -37,22 +39,12 @@ Do the following:
    HINT: no function required
 */
 let mood = 'happy';
+let child ='Autumn';
 
-if(mood === 'sad'){
-  console.log('Cheer up, buttercup!')
+if(child === 'Autumn'){
+    mood = 'moody';
+  console.log(mood)
 }
-if(mood === 'happy'){
-  console.log(`You've got this`)
-}
-
-mood = 'sad'
-if(mood === 'sad'){
-  console.log('Cheer up, buttercup!')
-}
-if(mood === 'happy'){
-  console.log(`You've got this`)
-}
-
 
 
 /*
@@ -83,7 +75,7 @@ Do the following:
 */
 
 function multiply(a, b){
-    console.log(a * b)
+    return(a * b)
   }
   multiply(5, 7);
 
@@ -104,7 +96,7 @@ function dogYears(age){
   let dogYears = age * 7;
   return dogYears;
 }
-console.log(dogYears(5));
+console.log('task 2:', dogYears(5));
 
 
 
@@ -241,9 +233,10 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(number){
+        return('${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number left over} bottles of soda on the wall');
   }
+  console.log('task 6:', annoyingSong(99))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
