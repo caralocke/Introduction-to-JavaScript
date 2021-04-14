@@ -259,19 +259,19 @@ Using the grade function below do the following:
 */
   
 function grade(mygrade){
-  if(mygrade >= 0.90){
+  if(mygrade >= 90){
     return 'you got an A'
-  }else if(mygrade >= 0.80 && mygrade <= 0.89){
+  }else if(mygrade >= 80 && mygrade <= 89){
     return 'you got a B'
-  }else if(mygrade >= 0.70 && mygrade <= 0.79){
+  }else if(mygrade >= 70 && mygrade <= 79){
     return 'you got a C'
-  }else if(mygrade >= 0.60 && mygrade <= 0.69){
+  }else if(mygrade >= 60 && mygrade <= 69){
     return 'you got a D'
-  }else(mygrade < 0.60){
+  }else(mygrade < 60);{
     return 'you got an F'
   }
 }
-  console.log(grade(75));
+  console.log(grade(100));
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
